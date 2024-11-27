@@ -1,45 +1,45 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1732744561
+::res://::1732748450
 icon.svg::CompressedTexture2D::7983805433116933155::1720660682::1720660688::1::::<><>::
-::res://Assets/::1720833266
-::res://Assets/Enemy/::1731303183
-::res://Assets/Enemy/Paper Clip/::1731303186
-paper clip enemy sprite sheet.png::CompressedTexture2D::1859639876237064104::1731302524::1731303186::1::::<><>::
-::res://Assets/Enemy/Tax/::1731303185
-Tax1.png::CompressedTexture2D::8033627941342499059::1720767151::1720767273::1::::<><>::
-Tax2.png::CompressedTexture2D::5101831562271709703::1720767151::1720767273::1::::<><>::
-::res://Assets/Player/::1731307559
-meele attack sprite sheet.png::CompressedTexture2D::1130434637364926264::1731307559::1731307559::1::::<><>::
-Player1.png::CompressedTexture2D::5102763716660038754::1720757821::1720763816::1::::<><>::
-Player2.png::CompressedTexture2D::5582276639144411761::1720757821::1720763816::1::::<><>::
-Player3.png::CompressedTexture2D::4499556299238372413::1720757821::1720763816::1::::<><>::
-Player4.png::CompressedTexture2D::7359647814712603580::1720757821::1720763816::1::::<><>::
-Player Hand.png::CompressedTexture2D::5472629050722095053::1720802043::1720802047::1::::<><>::
-Wheel1.png::CompressedTexture2D::2504331506381236057::1720758657::1720763816::1::::<><>::
-Wheel 2.png::CompressedTexture2D::3699705790979643834::1720758657::1720763816::1::::<><>::
-::res://Assets/Tilesets/::1731302528
-Test Tilemap.png::CompressedTexture2D::5251472165378593689::1720818654::1720818661::1::::<><>::
-tileset.png::CompressedTexture2D::5609852449781038388::1720751139::1720763836::1::::<><>::
-TilesetV3.png::CompressedTexture2D::5165407755797070532::1720829982::1720829982::1::::<><>::
-TilesetV4.png::CompressedTexture2D::3420648942478186544::1720830344::1720830344::1::::<><>::
-TilesetV5.png::CompressedTexture2D::4492429146024850623::1720831123::1720831123::1::::<><>::
-TilesetV6.png::CompressedTexture2D::7092966927175467497::1720832967::1720833266::1::::<><>::
-TilesetV7.png::CompressedTexture2D::4758457194655891596::1731298061::1731298067::1::::<><>::
-::res://Scenes/::1731591157
-main.tscn::PackedScene::705095342960588024::1731591157::0::1::::<><>::uid://djwsfcag0bxdc::::res://Scenes/Player/Player.tscn<>uid://cl6ppkqfrhmtw::::res://Assets/Tilesets/tileset.png<>uid://cg238kc7xmii0::::res://Assets/Tilesets/Test Tilemap.png<>uid://drqpbaru0ghvf::::res://Scenes/Enemys/Tax Enemy.tscn<>uid://cfufrm12fs317::::res://Assets/Tilesets/TilesetV3.png<>uid://boy8uadkuh665::::res://Assets/Tilesets/TilesetV4.png<>uid://b82bdhtdq5vx1::::res://Assets/Tilesets/TilesetV7.png<>uid://b5afwfl0lvyix::::res://Assets/Tilesets/TilesetV5.png<>uid://c8b5enea4aaer::::res://Assets/Tilesets/TilesetV6.png<>uid://cpddsd2qhxk7c::::res://Scenes/Enemys/paper_clip.tscn
-::res://Scenes/Enemys/::1731591157
-paper_clip.tscn::PackedScene::5832081650504462162::1731591157::0::1::::<><>::uid://1q285uvvxfg7::::res://Assets/Enemy/Paper Clip/paper clip enemy sprite sheet.png<>res://Scripts/Enemys/paper_clip.gd<>res://Scripts/Objects/Hurtboxt.gd
-Tax Enemy.tscn::PackedScene::8386415004880248555::1731591157::0::1::::<><>::res://Scripts/Enemys/enemy.gd<>uid://dmpsxcko1sh4n::::res://Assets/Enemy/Tax/Tax1.png<>uid://cexmokbebtftf::::res://Assets/Enemy/Tax/Tax2.png
-::res://Scenes/Player/::1731591157
-Player.tscn::PackedScene::7837479894603017756::1731591157::0::1::::<><>::res://Scripts/Player/Player.gd<>uid://clsdjspj6p1jp::::res://Assets/Player/Player2.png<>uid://b5dvbgj7cenw4::::res://Assets/Player/Player3.png<>uid://cex21jpxdwd35::::res://Assets/Player/Player1.png<>uid://dc4cla3lmq7eu::::res://Assets/Player/Player4.png<>uid://bbxd8d78t03vh::::res://Assets/Player/Wheel1.png<>uid://bsyfu4urmxi5g::::res://Assets/Player/Wheel 2.png<>uid://cj78nvpe3bmen::::res://Assets/Player/Player Hand.png<>uid://qdudf42k0de3::::res://Assets/Player/meele attack sprite sheet.png<>res://Scripts/Objects/Hitbox.gd
-::res://Scripts/::1731311563
-::res://Scripts/Enemys/::1731555983
-enemy.gd::GDScript::-1::1720767849::0::1::::<>Node2D<>::
-paper_clip.gd::GDScript::-1::1731555983::0::1::::<>Node2D<>::
-::res://Scripts/Objects/::1731388918
-Hitbox.gd::GDScript::-1::1731388918::0::1::::Hitbox<>Area2D<>::
-Hurtboxt.gd::GDScript::-1::1731388844::0::1::::Hurtbox<>Area2D<>::
-::res://Scripts/Player/::1731360492
-Player.gd::GDScript::-1::1731360492::0::1::::<>CharacterBody2D<>::
-::res://Scripts/Scene/::1731311614
-main.gd::GDScript::-1::1731311614::0::1::::<>Node2D<>::
+::res://Assets/::1732748366
+::res://Assets/Enemy/::1732748366
+::res://Assets/Enemy/Paper Clip/::1732748416
+paper clip enemy sprite sheet.png::CompressedTexture2D::1944564054961537518::1732748366::1732748416::1::::<><>::
+::res://Assets/Enemy/Tax/::1732748416
+Tax1.png::CompressedTexture2D::844725348436246606::1732748366::1732748416::1::::<><>::
+Tax2.png::CompressedTexture2D::7900276848618864135::1732748366::1732748416::1::::<><>::
+::res://Assets/Player/::1732748416
+meele attack sprite sheet.png::CompressedTexture2D::2080990588521349934::1732748366::1732748416::1::::<><>::
+Player1.png::CompressedTexture2D::516416033561748260::1732748366::1732748416::1::::<><>::
+Player2.png::CompressedTexture2D::9074718936097929133::1732748366::1732748416::1::::<><>::
+Player3.png::CompressedTexture2D::7081528507687102183::1732748366::1732748416::1::::<><>::
+Player4.png::CompressedTexture2D::96531497992539994::1732748366::1732748416::1::::<><>::
+Player Hand.png::CompressedTexture2D::2856126211556856531::1732748366::1732748416::1::::<><>::
+Wheel1.png::CompressedTexture2D::401445054034807937::1732748366::1732748416::1::::<><>::
+Wheel 2.png::CompressedTexture2D::4407027023082825778::1732748366::1732748416::1::::<><>::
+::res://Assets/Tilesets/::1732748416
+Test Tilemap.png::CompressedTexture2D::4904280893961920731::1732748366::1732748416::1::::<><>::
+tileset.png::CompressedTexture2D::5848697869421837382::1732748366::1732748416::1::::<><>::
+TilesetV3.png::CompressedTexture2D::4407300983675488323::1732748366::1732748416::1::::<><>::
+TilesetV4.png::CompressedTexture2D::4110104781535919248::1732748366::1732748416::1::::<><>::
+TilesetV5.png::CompressedTexture2D::1901787959117485223::1732748366::1732748416::1::::<><>::
+TilesetV6.png::CompressedTexture2D::4647553745399311023::1732748366::1732748416::1::::<><>::
+TilesetV7.png::CompressedTexture2D::2819178749405601510::1732748366::1732748416::1::::<><>::
+::res://Scenes/::1732748419
+main.tscn::PackedScene::705095342960588024::1732748419::0::1::::<><>::uid://djwsfcag0bxdc::::res://Scenes/Player/Player.tscn<>uid://cplfg1rmv4uli::::res://Assets/Tilesets/tileset.png<>uid://cb4w14ajbd6ep::::res://Assets/Tilesets/Test Tilemap.png<>uid://drqpbaru0ghvf::::res://Scenes/Enemys/Tax Enemy.tscn<>uid://b316urntlro6v::::res://Assets/Tilesets/TilesetV3.png<>uid://bys73b87cpieq::::res://Assets/Tilesets/TilesetV4.png<>uid://bgfvpyg8vrg35::::res://Assets/Tilesets/TilesetV7.png<>uid://2dif1lctoj8b::::res://Assets/Tilesets/TilesetV5.png<>uid://b7hkscbeovta2::::res://Assets/Tilesets/TilesetV6.png<>uid://cpddsd2qhxk7c::::res://Scenes/Enemys/paper_clip.tscn
+::res://Scenes/Enemys/::1732748420
+paper_clip.tscn::PackedScene::5832081650504462162::1732748420::0::1::::<><>::uid://2x7xk44jl3je::::res://Assets/Enemy/Paper Clip/paper clip enemy sprite sheet.png<>res://Scripts/Enemys/paper_clip.gd<>res://Scripts/Objects/Hurtboxt.gd
+Tax Enemy.tscn::PackedScene::8386415004880248555::1732748419::0::1::::<><>::res://Scripts/Enemys/enemy.gd<>uid://mbgrds1lg0y1::::res://Assets/Enemy/Tax/Tax1.png<>uid://dks7n1x46fncx::::res://Assets/Enemy/Tax/Tax2.png
+::res://Scenes/Player/::1732748419
+Player.tscn::PackedScene::7837479894603017756::1732748419::0::1::::<><>::res://Scripts/Player/Player.gd<>uid://d2j4kbcoud7tp::::res://Assets/Player/Player2.png<>uid://c75l0fk6prjkx::::res://Assets/Player/Player3.png<>uid://hmfkc5qtswee::::res://Assets/Player/Player1.png<>uid://bm04h1n8gwba::::res://Assets/Player/Player4.png<>uid://fyp0hbrusagf::::res://Assets/Player/Wheel1.png<>uid://b312ddol10v51::::res://Assets/Player/Wheel 2.png<>uid://bgxr8mrxwadnn::::res://Assets/Player/Player Hand.png<>uid://4wbu1jbb3nqk::::res://Assets/Player/meele attack sprite sheet.png<>res://Scripts/Objects/Hitbox.gd
+::res://Scripts/::1732748367
+::res://Scripts/Enemys/::1732748367
+enemy.gd::GDScript::-1::1732748367::0::1::::<>Node2D<>::
+paper_clip.gd::GDScript::-1::1732748367::0::1::::<>Node2D<>::
+::res://Scripts/Objects/::1732748367
+Hitbox.gd::GDScript::-1::1732748367::0::1::::Hitbox<>Area2D<>::
+Hurtboxt.gd::GDScript::-1::1732748367::0::1::::Hurtbox<>Area2D<>::
+::res://Scripts/Player/::1732748367
+Player.gd::GDScript::-1::1732748367::0::1::::<>CharacterBody2D<>::
+::res://Scripts/Scene/::1732748367
+main.gd::GDScript::-1::1732748367::0::1::::<>Node2D<>::

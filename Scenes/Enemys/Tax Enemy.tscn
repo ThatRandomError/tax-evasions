@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=3 uid="uid://drqpbaru0ghvf"]
 
 [ext_resource type="Script" path="res://Scripts/Enemys/enemy.gd" id="1_moi20"]
-[ext_resource type="Texture2D" uid="uid://dmpsxcko1sh4n" path="res://Assets/Enemy/Tax/Tax1.png" id="2_gn27q"]
-[ext_resource type="Texture2D" uid="uid://cexmokbebtftf" path="res://Assets/Enemy/Tax/Tax2.png" id="3_mhvqp"]
+[ext_resource type="Texture2D" uid="uid://mbgrds1lg0y1" path="res://Assets/Enemy/Tax/Tax1.png" id="2_gn27q"]
+[ext_resource type="Texture2D" uid="uid://dks7n1x46fncx" path="res://Assets/Enemy/Tax/Tax2.png" id="3_mhvqp"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_mmc4d"]
 animations = [{

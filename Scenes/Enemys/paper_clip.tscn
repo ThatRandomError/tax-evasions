@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://cpddsd2qhxk7c"]
 
-[ext_resource type="Texture2D" uid="uid://1q285uvvxfg7" path="res://Assets/Enemy/Paper Clip/paper clip enemy sprite sheet.png" id="1_0rfjl"]
+[ext_resource type="Texture2D" uid="uid://2x7xk44jl3je" path="res://Assets/Enemy/Paper Clip/paper clip enemy sprite sheet.png" id="1_0rfjl"]
 [ext_resource type="Script" path="res://Scripts/Enemys/paper_clip.gd" id="1_oi1sy"]
 [ext_resource type="Script" path="res://Scripts/Objects/Hurtboxt.gd" id="3_lr21x"]
 
