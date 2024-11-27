@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cj78nvpe3bmen"
-path="res://.godot/imported/Player Hand.png-cbaff5d37ddb0f3a5d2d482e679e67b5.ctex"
+path="res://.godot/imported/Player Hand.png-c2a038fd458e75b0499bb10a5f39604c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Player/Player Hand.png"
-dest_files=["res://.godot/imported/Player Hand.png-cbaff5d37ddb0f3a5d2d482e679e67b5.ctex"]
+source_file="res://tax-evasion/Assets/Player/Player Hand.png"
+dest_files=["res://.godot/imported/Player Hand.png-c2a038fd458e75b0499bb10a5f39604c.ctex"]
 
 [params]
 

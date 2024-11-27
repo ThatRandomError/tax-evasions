@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dmpsxcko1sh4n"
-path="res://.godot/imported/Tax1.png-c1184542cd22960c18f6d44a7df2b9b4.ctex"
+path="res://.godot/imported/Tax1.png-48578f24487d1a2e609f8b2ee0b97b2d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Enemy/Tax/Tax1.png"
-dest_files=["res://.godot/imported/Tax1.png-c1184542cd22960c18f6d44a7df2b9b4.ctex"]
+source_file="res://tax-evasion/Assets/Enemy/Tax/Tax1.png"
+dest_files=["res://.godot/imported/Tax1.png-48578f24487d1a2e609f8b2ee0b97b2d.ctex"]
 
 [params]
 

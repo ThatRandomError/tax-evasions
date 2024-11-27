@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bbxd8d78t03vh"
-path="res://.godot/imported/Wheel1.png-5b6488e0fb3d59e581d31dec977b48d2.ctex"
+path="res://.godot/imported/Wheel1.png-0490bd73bdd34ff82be0529a8fa83d17.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Player/Wheel1.png"
-dest_files=["res://.godot/imported/Wheel1.png-5b6488e0fb3d59e581d31dec977b48d2.ctex"]
+source_file="res://tax-evasion/Assets/Player/Wheel1.png"
+dest_files=["res://.godot/imported/Wheel1.png-0490bd73bdd34ff82be0529a8fa83d17.ctex"]
 
 [params]
 

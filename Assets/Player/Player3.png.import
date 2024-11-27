@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b5dvbgj7cenw4"
-path="res://.godot/imported/Player3.png-1020dd1803467200ce00d3056cfde824.ctex"
+path="res://.godot/imported/Player3.png-5f6409876946834d94f487766ce4218e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Player/Player3.png"
-dest_files=["res://.godot/imported/Player3.png-1020dd1803467200ce00d3056cfde824.ctex"]
+source_file="res://tax-evasion/Assets/Player/Player3.png"
+dest_files=["res://.godot/imported/Player3.png-5f6409876946834d94f487766ce4218e.ctex"]
 
 [params]
 

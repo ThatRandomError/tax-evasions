@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://qdudf42k0de3"
-path="res://.godot/imported/meele attack sprite sheet.png-380b97e91a96073c66883e6aabf65710.ctex"
+path="res://.godot/imported/meele attack sprite sheet.png-3f27bc9745c0331326928ba338280cf2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Player/meele attack sprite sheet.png"
-dest_files=["res://.godot/imported/meele attack sprite sheet.png-380b97e91a96073c66883e6aabf65710.ctex"]
+source_file="res://tax-evasion/Assets/Player/meele attack sprite sheet.png"
+dest_files=["res://.godot/imported/meele attack sprite sheet.png-3f27bc9745c0331326928ba338280cf2.ctex"]
 
 [params]
 

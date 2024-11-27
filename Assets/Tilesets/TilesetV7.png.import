@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b82bdhtdq5vx1"
-path="res://.godot/imported/TilesetV7.png-89056650b34de1525158dbb465dd56fd.ctex"
+path="res://.godot/imported/TilesetV7.png-a22e8ada82492e103227a297e9b8501e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tilesets/TilesetV7.png"
-dest_files=["res://.godot/imported/TilesetV7.png-89056650b34de1525158dbb465dd56fd.ctex"]
+source_file="res://tax-evasion/Assets/Tilesets/TilesetV7.png"
+dest_files=["res://.godot/imported/TilesetV7.png-a22e8ada82492e103227a297e9b8501e.ctex"]
 
 [params]
 
