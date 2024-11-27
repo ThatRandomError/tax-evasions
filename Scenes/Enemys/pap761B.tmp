@@ -1,0 +1,65 @@
+[gd_scene load_steps=10 format=3 uid="uid://cpddsd2qhxk7c"]
+
+[ext_resource type="Texture2D" uid="uid://1q285uvvxfg7" path="res://Assets/Enemy/Paper Clip/paper clip enemy sprite sheet.png" id="1_0rfjl"]
+[ext_resource type="Script" path="res://Scripts/Enemys/paper_clip.gd" id="1_oi1sy"]
+[ext_resource type="Script" path="res://Scripts/Objects/Hurtboxt.gd" id="3_lr21x"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q0pql"]
+atlas = ExtResource("1_0rfjl")
+region = Rect2(0, 0, 14, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d8mcm"]
+atlas = ExtResource("1_0rfjl")
+region = Rect2(14, 0, 14, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fckbd"]
+atlas = ExtResource("1_0rfjl")
+region = Rect2(0, 28, 14, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kc7ja"]
+atlas = ExtResource("1_0rfjl")
+region = Rect2(14, 28, 14, 28)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_a5yit"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q0pql")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d8mcm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fckbd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kc7ja")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 3.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_u2wot"]
+radius = 6.0
+
+[node name="Paper Clip" type="Node2D"]
+z_index = 1
+y_sort_enabled = true
+script = ExtResource("1_oi1sy")
+
+[node name="Enemy" type="AnimatedSprite2D" parent="."]
+z_index = 1
+y_sort_enabled = true
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_a5yit")
+animation = &"idle"
+frame_progress = 0.365698
+
+[node name="Hurtbox" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("3_lr21x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+shape = SubResource("CapsuleShape2D_u2wot")

@@ -1,0 +1,247 @@
+[gd_scene load_steps=27 format=3 uid="uid://djwsfcag0bxdc"]
+
+[ext_resource type="Script" path="res://Scripts/Player/Player.gd" id="1_7h2ov"]
+[ext_resource type="Texture2D" uid="uid://clsdjspj6p1jp" path="res://Assets/Player/Player2.png" id="3_ao8jj"]
+[ext_resource type="Texture2D" uid="uid://b5dvbgj7cenw4" path="res://Assets/Player/Player3.png" id="4_4bxc7"]
+[ext_resource type="Texture2D" uid="uid://cex21jpxdwd35" path="res://Assets/Player/Player1.png" id="4_ymaql"]
+[ext_resource type="Texture2D" uid="uid://dc4cla3lmq7eu" path="res://Assets/Player/Player4.png" id="5_j3mnk"]
+[ext_resource type="Texture2D" uid="uid://bbxd8d78t03vh" path="res://Assets/Player/Wheel1.png" id="6_dyhqe"]
+[ext_resource type="Texture2D" uid="uid://bsyfu4urmxi5g" path="res://Assets/Player/Wheel 2.png" id="7_4q4i3"]
+[ext_resource type="Texture2D" uid="uid://cj78nvpe3bmen" path="res://Assets/Player/Player Hand.png" id="8_rhcwa"]
+[ext_resource type="Texture2D" uid="uid://qdudf42k0de3" path="res://Assets/Player/meele attack sprite sheet.png" id="9_2u15b"]
+[ext_resource type="Script" path="res://Scripts/Objects/Hitbox.gd" id="10_h2bar"]
+
+[sub_resource type="Shader" id="Shader_pqd5y"]
+code = "// NOTE: Shader automatically converted from Godot Engine 4.2.stable's CanvasItemMaterial.
+
+shader_type canvas_item;
+render_mode blend_mix;
+
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_q1axy"]
+shader = SubResource("Shader_pqd5y")
+
+[sub_resource type="Curve" id="Curve_d7lwk"]
+_data = [Vector2(0, 0.541384), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_wywbd"]
+curve = SubResource("Curve_d7lwk")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_xejgd"]
+gravity = Vector3(0, 0, 0)
+alpha_curve = SubResource("CurveTexture_wywbd")
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1a8yp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_dyhqe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_4q4i3")
+}],
+"loop": true,
+"name": &"moving",
+"speed": 5.0
+}]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5uaxq"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_re63p"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_ymaql")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ao8jj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_4bxc7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_j3mnk")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_5uaxq")
+}],
+"loop": true,
+"name": &"moving",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vsiol"]
+radius = 4.0
+
+[sub_resource type="Curve" id="Curve_rdq1i"]
+_data = [Vector2(0.234742, 1), 0.0, 0.0, 0, 0, Vector2(0.99061, 0.043956), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yy7n6"]
+atlas = ExtResource("9_2u15b")
+region = Rect2(0, 0, 30, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qd5q0"]
+atlas = ExtResource("9_2u15b")
+region = Rect2(31, 0, 30, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c5s8b"]
+atlas = ExtResource("9_2u15b")
+region = Rect2(62, 0, 30, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8wgtb"]
+atlas = ExtResource("9_2u15b")
+region = Rect2(93, 0, 30, 10)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_t2t8y"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yy7n6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qd5q0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c5s8b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8wgtb")
+}],
+"loop": true,
+"name": &"attack",
+"speed": 10.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kyn6m"]
+radius = 6.0
+height = 33.0
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+visibility_layer = 3
+z_index = 1
+y_sort_enabled = true
+scale = Vector2(0.3, 0.3)
+script = ExtResource("1_7h2ov")
+
+[node name="DashParticals" type="GPUParticles2D" parent="."]
+z_index = 1
+y_sort_enabled = true
+texture_filter = 1
+material = SubResource("ShaderMaterial_q1axy")
+emitting = false
+process_material = SubResource("ParticleProcessMaterial_xejgd")
+texture = ExtResource("3_ao8jj")
+lifetime = 0.5
+
+[node name="Wheel" type="AnimatedSprite2D" parent="."]
+show_behind_parent = true
+z_index = 1
+y_sort_enabled = true
+texture_filter = 1
+position = Vector2(0, 12)
+scale = Vector2(2.7, 2.7)
+sprite_frames = SubResource("SpriteFrames_1a8yp")
+animation = &"moving"
+autoplay = "moving"
+frame_progress = 0.773028
+
+[node name="Player" type="AnimatedSprite2D" parent="."]
+z_index = 1
+y_sort_enabled = true
+texture_filter = 1
+position = Vector2(0, 12.5)
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_re63p")
+autoplay = "default"
+offset = Vector2(0, -12)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 13)
+shape = SubResource("CircleShape2D_vsiol")
+
+[node name="MotorParticals" type="CPUParticles2D" parent="."]
+modulate = Color(0.210664, 0.263043, 0.30796, 1)
+z_index = 3
+position = Vector2(0, 16)
+amount = 20
+lifetime = 0.9
+explosiveness = 0.15
+lifetime_randomness = 1.0
+emission_shape = 1
+emission_sphere_radius = 2.09
+gravity = Vector2(0, -50)
+scale_amount_max = 3.0
+scale_amount_curve = SubResource("Curve_rdq1i")
+
+[node name="Hand2" type="Sprite2D" parent="."]
+visible = false
+z_index = 3
+texture_filter = 1
+position = Vector2(-11, 6)
+texture = ExtResource("8_rhcwa")
+
+[node name="Hand1" type="Sprite2D" parent="."]
+visible = false
+z_index = 3
+texture_filter = 1
+position = Vector2(37.5, 17.5)
+texture = ExtResource("8_rhcwa")
+
+[node name="Dashing" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true
+
+[node name="DashReset" type="Timer" parent="."]
+wait_time = 6.0
+one_shot = true
+
+[node name="Melee" type="AnimatedSprite2D" parent="."]
+visible = false
+z_index = 5
+y_sort_enabled = true
+texture_filter = 1
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_t2t8y")
+animation = &"attack"
+frame_progress = 0.649436
+offset = Vector2(0, -17)
+
+[node name="Hitbox" type="Area2D" parent="Melee"]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("10_h2bar")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Melee/Hitbox"]
+position = Vector2(0, -18)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_kyn6m")
+disabled = true
+
+[node name="Attacking" type="Timer" parent="."]
+wait_time = 0.3
+one_shot = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(6.12311e-05, 0)
+scale = Vector2(1.00321, 1)
+zoom = Vector2(5, 5)
+position_smoothing_enabled = true
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+drag_left_margin = 0.1
+drag_top_margin = 0.1
+drag_right_margin = 0.1
+drag_bottom_margin = 0.1
+editor_draw_drag_margin = true
+
+[connection signal="timeout" from="Dashing" to="." method="_on_dashing_timeout"]
+[connection signal="timeout" from="DashReset" to="." method="_on_dash_reset_timeout"]
+[connection signal="timeout" from="Attacking" to="." method="_on_attacking_timeout"]
